@@ -109,6 +109,13 @@ extension PlaySoundViewController: AVAudioPlayerDelegate {
             showAlert(Alerts.AudioEngineError, message: String(describing: error))
             return
         }
+//        do{
+//            try audioPlayer = AVAudioPlayer(contentsOf : self.recordedAudioURL)
+//            print("Error")
+//        }
+//        catch{}
+//        let currentSeconds = Float(self.audioPlayer.currentTime)
+//        print(currentSeconds)
         
         // play the recording!
         audioPlayerNode.play()

@@ -26,7 +26,7 @@ class PlaySoundViewController: UIViewController {
     var audioEngine:AVAudioEngine!
     var audioPlayerNode: AVAudioPlayerNode!
     var stopTimer: Timer!
-//    var audioPlayer : AVAudioPlayer = AVAudioPlayer()
+//    var audioPlayer : AVAudioPlayer!
     
     enum ButtonType: Int {
         case slow = 0, fast, chipmunk, vader, echo, reverb
@@ -51,9 +51,6 @@ class PlaySoundViewController: UIViewController {
             playSound(reverb: true)
         }
         configureUI(.playing)
-        
-//        let currentSeconds = Float(self.audioPlayer.currentTime)
-//        print(currentSeconds)
     }
     
     @IBAction func stopButtonPressed(_ sender: AnyObject) {
