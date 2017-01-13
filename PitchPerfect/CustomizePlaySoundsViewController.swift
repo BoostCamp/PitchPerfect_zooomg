@@ -50,6 +50,7 @@ class CustomizePlaySoundsViewController: UIViewController {
         let reverb = reverbSwitch.isOn
         print(rate,pitch,echo,reverb)
         playSound(rate : rate,pitch : pitch,echo : echo, reverb : reverb)
+        configureUI(.playing)
     }
 
     @IBAction func stopButtonPressed(_ sender: UIButton) {

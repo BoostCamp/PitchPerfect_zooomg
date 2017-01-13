@@ -194,6 +194,7 @@
                     </view>
                     <connections>
                         <outlet property="chipmunkButton" destination="eFX-j1-Jmf" id="CWg-3F-2Zi"/>
+                        <outlet property="customButton" destination="Itz-HX-jqF" id="Vvk-Os-Ynx"/>
                         <outlet property="echoButton" destination="qeo-KT-S04" id="uTG-c5-T8W"/>
                         <outlet property="rabbitButton" destination="7tn-gh-f7h" id="spz-1w-Oze"/>
                         <outlet property="reverbButton" destination="rD3-oE-qlO" id="aeV-GQ-TzO"/>
@@ -227,11 +228,23 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vZ2-ov-GoN">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="201"/>
                                                 <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Ngj-dA-xfp">
-                                                        <rect key="frame" x="-2" y="0.0" width="347" height="101.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fs-O8-PPq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.25" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ngj-dA-xfp">
+                                                        <rect key="frame" x="-2" y="50.5" width="347" height="51"/>
                                                     </slider>
-                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Qyj-vE-wxc">
-                                                        <rect key="frame" x="-2" y="100.5" width="347" height="101.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pitch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxV-CL-Qsp">
+                                                        <rect key="frame" x="0.0" y="100.5" width="343" height="50.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-2000" maxValue="2000" translatesAutoresizingMaskIntoConstraints="NO" id="Qyj-vE-wxc">
+                                                        <rect key="frame" x="-2" y="151" width="347" height="51"/>
                                                     </slider>
                                                 </subviews>
                                             </stackView>

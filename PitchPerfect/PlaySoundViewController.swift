@@ -20,6 +20,7 @@ class PlaySoundViewController: UIViewController {
     @IBOutlet weak var echoButton: UIButton!
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var customButton: UIButton!
     
     var recordedAudioURL:URL!
     var audioFile:AVAudioFile!

@@ -167,6 +167,7 @@ extension PlaySoundViewController: AVAudioPlayerDelegate {
         vaderButton.isEnabled = enabled
         echoButton.isEnabled = enabled
         reverbButton.isEnabled = enabled
+        customButton.isEnabled = enabled
     }
 
     func showAlert(_ title: String, message: String) {
