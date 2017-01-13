@@ -58,6 +58,14 @@ class PlaySoundViewController: UIViewController {
         stopAudio()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "customButtonPressed"{
+            let playCustomSoundVC = segue.destination as! CustomizePlaySoundsViewController // 강제 업캐스팅
+            //let recordedAudioURL = sender as! URL
+            playCustomSoundVC.recordedAudioURL = recordedAudioURL
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAudio()
